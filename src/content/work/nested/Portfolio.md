@@ -12,9 +12,6 @@ tags:
   - Testing
 ---
 
-## Votre Partenaire pour l'Excellence Technologique
+## Your Partner in Technological Excellence
 
-
-> Je suis un professionnel de l'informatique passionné, spécialisé dans le développement web, la gestion de bases de données et les réseaux informatiques. Fort de mon expertise, je propose des solutions personnalisées et innovantes. Mon savoir-faire s'étend de la création de sites web modernes à la mise en place de bases de données optimisées et à la gestion efficace des réseaux informatiques. Choisissez un partenariat avec moi pour bénéficier de compétences techniques de haut niveau, d'une approche personnalisée et d'un engagement envers l'excellence informatique. Ensemble, réalisons vos projets avec succès.
-
-
+>  I'm a passionate IT professional, specializing in web development, database management and computer networks. My expertise enables me to offer customized, innovative solutions.
