@@ -2,9 +2,9 @@
 title: fintech
 publishDate: 2020-03-02 00:00:00
 img: /assets/fintech.png
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Fintech
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Votre Partenaire pour le Développement Web et l'Infrastructure Informatique
 tags:
   - Design
   - Dev
@@ -13,6 +13,5 @@ tags:
 
 ## Level-two heading
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Découvrez Fintech, votre solution tout-en-un pour la création de sites web professionnels, la gestion de bases de données robustes et l'expertise en réseaux informatiques. Notre équipe hautement qualifiée offre des solutions sur mesure, allant de la conception web à la sécurité des données et à la mise en réseau. Choisissez Fintech pour des services techniques de qualité, une personnalisation adaptée à vos besoins et un engagement envers l'excellence. Transformez votre présence en ligne avec Fintech dès aujourd'hui.
 
-Lorem ipsum dolor sit amet, makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.

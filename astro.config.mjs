@@ -1,7 +1,10 @@
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
+import react from "@astrojs/react";
+site: 'https://astronaut.github.io';
+base: 'https://github.com/bastian2012/portfolio';
 
-site: 'https://astronaut.github.io'
-base: 'https://github.com/bastian2012/portfolio'
-export default defineConfig({});
+// https://astro.build/config
+export default defineConfig({
+  integrations: [react()]
+});

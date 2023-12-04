@@ -2,20 +2,14 @@
 title: Academy-Learning
 publishDate: 2020-03-02 00:00:00
 img: /assets/academy-learning.png
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt:   Academy-Learning
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Academy-Learning
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Conception
+  - Codage
+  - Testing
 ---
+## Votre Destination en Ligne pour l'Apprentissage Informatique
 
-## Level-two heading
-
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
-
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
- 
+> Découvrez Academy-Learning, la plateforme d'apprentissage en ligne dédiée à l'informatique. Accédez à une variété de cours flexibles, du développement web à la sécurité informatique. Bénéficiez d'instructeurs experts, apprenez à votre rythme et obtenez des certifications reconnues. Faites progresser votre carrière informatique avec Academy-Learning dès aujourd'hui.
