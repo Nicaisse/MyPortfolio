@@ -4,11 +4,11 @@ publishDate: 2020-03-02 00:00:00
 img: /assets/wordpress.png
 img_alt: Best Western
 description: |
-  Best Western web site
+  FunDevMe Web site
 tags:
   - Design
-  - Developpement
-  - Testing
+  - Dev
+  - Test
 ---
 
 ##  An Exceptional Online Experience

@@ -6,9 +6,8 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   Expert Informatique
 tags:
-  - Analist
-  - Conception
-  - Programmation
+  - design
+  - coding
   - Testing
 ---
 

@@ -7,7 +7,7 @@ description: |
   Academy-Learning
 tags:
   - Conception
-  - Codage
+  - Coding
   - Testing
 ---
 ## Your Online Destination for Computer Learning
