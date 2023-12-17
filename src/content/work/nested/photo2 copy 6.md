@@ -1,7 +1,7 @@
 ---
 title: realization with Photoshop
 publishDate: 2020-03-02 00:00:00
-img: /assets/img/img6.jpg
+img: /assets/img/img16.jpg
 img_alt:   With Photoshop
 description: |
   with Photoshop
