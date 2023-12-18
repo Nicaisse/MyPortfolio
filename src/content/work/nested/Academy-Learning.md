@@ -1,5 +1,4 @@
 ---
-title: Academy-Learning
 publishDate: 2020-03-02 00:00:00
 img: /assets/academy-learning.png
 img_alt:   Academy-Learning

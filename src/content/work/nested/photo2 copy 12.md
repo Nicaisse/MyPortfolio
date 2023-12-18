@@ -1,5 +1,5 @@
 ---
-title: realization with Photoshop
+title: ---
 publishDate: 2020-03-02 00:00:00
 img: /assets/img/img12.jpg
 img_alt:   With Photoshop

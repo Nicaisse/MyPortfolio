@@ -1,5 +1,4 @@
 ---
-title: FunDevMe
 publishDate: 2020-03-02 00:00:00
 img: /assets/wordpress.png
 img_alt: Best Western

@@ -1,5 +1,4 @@
 ---
-title: fintech
 publishDate: 2020-03-02 00:00:00
 img: /assets/fintech.png
 img_alt: Fintech

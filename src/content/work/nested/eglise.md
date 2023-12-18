@@ -1,5 +1,4 @@
 ---
-title: Tabernacle du Dieu de la grace
 publishDate: 2020-03-02 00:00:00
 img: /assets/eglise.png
 img_alt: Tabernacle du Dieu de la grace
