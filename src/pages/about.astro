@@ -1,115 +1,114 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Bryan Nicaisse" description="About Bryan Nicaisse who is a Web & Application developper">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="480"
-					height="620"
-					src="/assets/img/bryan.jpg"
-					alt="Bryan Nicaisse at work"
-				/>
-			</Hero>
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-					</br></br>
-					I have solid experience as a web developer, having worked on a variety of projects ranging from showcase sites to complex web applications. My passion for problem-solving and constant thirst for learning motivate me to stay at the cutting edge of emerging technologies.
-				</br></br>
+<BaseLayout
+  title="About | Bryan Nicaisse"
+  description="About Bryan Nicaisse who is a Web & Application developper"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <img
+          width="480"
+          height="620"
+          src="/assets/img/bryan.jpg"
+          alt="Bryan Nicaisse at work"
+        />
+      </Hero>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p></p>
+        </div>
+         I have solid experience as a web developer, having worked on a variety
+        of projects ranging from showcase sites to complex web applications. My
+        passion for problem-solving and constant thirst for learning motivate me
+        to stay at the cutting edge of emerging technologies.
+      </section>
+    </main>
 
-- Langages   : HTML/CSS, JavaScript, PHP, Java, Python</br>
-- Frameworks : Webflow, Wordpress, Shopify, ASP.NET, Django</br>
-- Tools      : Git, Webpack, npm</br>
-- Design     : Responsive design, Canvas</br></br>
-
-I'm a firm believer in collaboration and a user-centered approach. I constantly strive to achieve the perfect balance between robust functionality and elegant design.
-</br>
-</br>
-Don't hesitate to contact me to discuss exciting projects or simply to share a cup of coffee!
-
-					</p>
-					
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					Computer Sciences @ ESIH | 2020-2024 </br>
-					Business Management @ ESIH | 2020-2022 </br>
-				</div>
-			</section>
-		</main>
-		<ContactCTA />
-	</div>
+     - Langages : HTML/CSS, JavaScript, PHP, Java, Python
+  </div>
+   - Frameworks : Webflow, Wordpress, Shopify, ASP.NET, Django
 </BaseLayout>
+ - Tools : Git, Webpack, npm - Design : Responsive design, Canvas I'm a firm
+believer in collaboration and a user-centered approach. I constantly strive to
+achieve the perfect balance between robust functionality and elegant design.
+Don't hesitate to contact me to discuss exciting projects or simply to share a
+cup of coffee!
+
+<section>
+  <h2 class="section-title">Education</h2>
+  <div class="content">Computer Sciences @ ESIH | 2020-2024</div>
+   Business Management @ ESIH | 2020-2022
+</section>
+
+<ContactCTA />
+
 <style>
+  .imp {
+    font-size: 1.4em !important;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	.imp{
-		font-size: 1.4em!important;
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-300);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-300);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
-
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
