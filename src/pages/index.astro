@@ -38,17 +38,14 @@ const projects = (await getCollection('work'))
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="strategy" size="1.33em" /> IT Manager</Pill>
 						<Pill><Icon icon="strategy" size="1.33em" /> SEO</Pill>
-
-
 					</div>
 				</Hero>
-
 				<img
 				style="margin:auto"
 					alt="#"
 					width="300"
 					height="500"
-					src="/assets/img/bryan.jpg"
+					src="/bryan.jpg"
 				/>
 			</header>
 
@@ -66,8 +63,8 @@ const projects = (await getCollection('work'))
 						{
 							projects.map((project) => (
 								<li>
-									<PortfolioPreview project={project} /></br>
-									</br>
+									<PortfolioPreview project={project} />
+									
 								</li>
 							))
 						}

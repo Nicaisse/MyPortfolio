@@ -1,15 +1,15 @@
 ---
 publishDate: 2020-03-02 00:00:00
-img: /assets/wordpress.png
-img_alt: Best Western
+img: /gamers.png
+img_alt:   Gamers-Society
 description: |
-  FunDevMe Web site
+  realization with canvas
 tags:
-  - Design
-  - Dev
-  - Test
+  - Conception
+  - Coding
+  - Testing
 ---
+## Your Online Destination for Computer Learning
 
-## FunDevMe
-> Discover  <a style="text-decoration:none" href="http://fundevme.unaux.com/" target="_blank">FunDevMe</a>  website, designed to offer an exceptional online experience. Our platform combines modern design and user-friendliness to offer visitors a seamless browsing experience. Easily explore our accommodations, discover exclusive offers and book your stay in just a few clicks. 
-
+> Discover my <a style="text-decoration:none" href="https://drive.google.com/file/d/1uneJ2ERflT6I0ykYMBnRBIDlGO54n1Vo/view?usp=sharing" target="_blank">realizations with canvas </a> 
+During my career in web development, I acquired significant expertise in the manipulation of the Canvas element in HTML5. My experience includes creating captivating animations, implementing dynamic digital signatures for online forms, and designing addictive interactive games.
