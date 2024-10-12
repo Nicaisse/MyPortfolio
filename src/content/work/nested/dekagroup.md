@@ -3,7 +3,7 @@ publishDate: 2020-03-02 06:00:00
 img: /assets/dekagroup.png
 img_alt: DEKAGROUP
 description: |
-  Academy-Learning
+  Stock Management System
 tags:
   - Conception
   - Coding
