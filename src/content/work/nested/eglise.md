@@ -1,7 +1,8 @@
 ---
-publishDate: 2020-03-02 00:00:00
+publishDate: 2020-03-02 01:00:00
 img: /assets/eglise.png
 img_alt: Tabernacle du Dieu de la grace
+title: Eglise
 description: |
   Your Partner for Web Development and IT Infrastructure
 tags:
