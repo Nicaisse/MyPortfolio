@@ -9,8 +9,18 @@ import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
 
 // Typage explicite des props pour TypeScript
+type WorkFrontmatter = {
+  img: string;
+  description: string;
+  publishDate: Date;
+  tags: string[];
+  img_alt?: string;
+  title?: string;
+  url?: string;
+};
+
 type Props = {
-  entry: CollectionEntry<"work">;
+  entry: CollectionEntry<"work"> & { data: WorkFrontmatter };
 };
 
 export async function getStaticPaths() {
@@ -37,7 +47,7 @@ const companyName = companyHeading ? companyHeading.text : "";
         <div class="wrapper stack gap-2">
           <a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
           <Hero
-            title={typeof entry.data.title === "string" ? entry.data.title : ""}
+            title={entry.data.title ?? ""}
             align="start"
           >
             <div class="details">
@@ -48,7 +58,7 @@ const companyName = companyHeading ? companyHeading.text : "";
               <div class="project-image-container">
                 {
                   entry.data.img &&
-                    (typeof entry.data.url === "string" && entry.data.url ? (
+                    (entry.data.url ? (
                       <a
                         href={entry.data.url}
                         target="_blank"
