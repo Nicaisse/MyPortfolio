@@ -19,8 +19,7 @@ Dekagroup Haiti is a diversified company based in Haiti, engaged in sectors such
 
 
 ## Stock Management System
-
-- Design and development of a system dedicated to managing internal operations and inventory control at each site.
-- Implementation and maintenance of a robust database for data reliability and accessibility.
-- Collection and analysis of stored data to provide valuable insights for operational optimization.
-- Creation of interactive dashboards and reports to visually represent trends and key performance indicators.
+  - Design and development of a system dedicated to managing internal operations and inventory control at each site.
+  - Implementation and maintenance of a robust database for data reliability and accessibility.
+  - Collection and analysis of stored data to provide valuable insights for operational optimization.
+  - Creation of interactive dashboards and reports to visually represent trends and key performance indicators.

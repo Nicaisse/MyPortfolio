@@ -8,23 +8,25 @@ import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 
-interface Props {
+// Typage explicite des props pour TypeScript
+type Props = {
   entry: CollectionEntry<'work'>;
-}
+};
 
 export async function getStaticPaths() {
   const work = await getCollection('work');
-  return work.map((entry) => ({
+  return work.map((entry: { slug: any; }) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
 }
 
-const { entry } = Astro.props;
+// Typage de Astro.props pour éviter l'erreur "any"
+const { entry } = Astro.props as Props;
 const { Content, headings } = await entry.render();
 
-// Trouver le heading entreprise (ex: ## ClioHaiti)
-const companyHeading = headings.find(h => h.depth === 2);
+// Trouver le heading entreprise (ex: ## ClioHaiti ou ## PARTNERS INSTALLATION)
+const companyHeading = headings.find((h: { depth: number; }) => h.depth === 2);
 const companyName = companyHeading ? companyHeading.text : '';
 ---
 
@@ -34,15 +36,15 @@ const companyName = companyHeading ? companyHeading.text : '';
       <header>
         <div class="wrapper stack gap-2">
           <a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
-          <Hero title={entry.data.title ?? ""} align="start">
+          <Hero title={"title" in entry.data && entry.data.title ? entry.data.title : ""} align="start">
             <div class="details">
               <div class="tags">
-                {entry.data.tags.map((t) => <Pill>{t}</Pill>)}
+                {entry.data.tags.map((t: string) => <Pill>{t}</Pill>)}
               </div>
               <p class="description">{entry.data.description}</p>
               <div class="project-image-container">
                 {entry.data.img && (
-                  entry.data.url ? (
+                  "url" in entry.data && entry.data.url ? (
                     <a href={entry.data.url} target="_blank" rel="noopener noreferrer" class="img-link">
                       <img class="project-img clickable" src={entry.data.img} alt={entry.data.img_alt || ''} />
                     </a>
@@ -57,11 +59,9 @@ const companyName = companyHeading ? companyHeading.text : '';
       </header>
       <main class="wrapper">
         <div class="stack gap-10 content">
-
           <div class="content">
-            {/* Affiche tout le contenu sauf la section entreprise */}
             <Content 
-              headings={headings.filter(h => !(h.depth === 2 && h.text === companyName))}
+              headings={headings.filter((h: { depth: number; text: any; }) => !(h.depth === 2 && h.text === companyName))}
             />
           </div>
         </div>
