@@ -4,28 +4,39 @@ import '../styles/global.css';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
+	image?: string | undefined;
+	url?: string | undefined;
 }
-
 const {
-	title = 'Bryan Nicaisse',
-	description = 'The personal site of Bryan Nicaisse',
+	title = "Bryan Nicaisse – Software Developer | Portfolio",
+	description = "Professional portfolio of Bryan Nicaisse, Software Developer. Discover innovative projects, technical skills, and contact information.",
+	image = "https://nicaissebryan.com/assets/img/bryan.jpg",
+	url = "https://nicaissebryan.com",
 } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
-<meta name="generator" content={Astro.generator} />
+<meta name="description" content={description} />
 <title>{title}</title>
-<style>
-	.img{
-		width: 10px!important;
-		height: 10px!important;
-		border-radius: 50%!important;
-	}
-</style>
+<link rel="canonical" href={url} />
 
-<link rel="icon" class="img" type="" href="/assets/favicon/favicon.ico" />
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:url" content={url} />
+<meta property="og:site_name" content="Bryan Nicaisse" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:url" content={url} />
+
+<link rel="icon" type="image/x-icon" href="/assets/img/bryan.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
